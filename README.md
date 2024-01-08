@@ -6,3 +6,15 @@
 
 
 ## 2.
+/project
+|-- /src
+|   |-- main.py
+|   |-- module1.py
+|   |-- module2.py
+|-- /data
+|   |-- dataset.csv
+|-- /docs
+|   |-- documentation.md
+|-- README.md
+|-- requirements.txt
+|-- .gitignore
