@@ -24,7 +24,7 @@ During the data collection process from the API, several challenges arose, and h
 
 ### Problem 2: Data Filtering Challenge for Clubs data collection
 
-**Problem:** The [API](footballapi.pulselive.com) used contains information about teams from various leagues. Since the project's goal is limited to the Premier League, I needed a filtering mechanism to only retrieve teams that participated in this league instead of using an infinite loop with increasing team IDs.
+**Problem:** The API (footballapi.pulselive.com) used contains information about teams from various leagues. Since the project's goal is limited to the Premier League, I needed a filtering mechanism to only retrieve teams that participated in this league instead of using an infinite loop with increasing team IDs.
 
 **Solution:** I collected data about matches first, then used SQL statements to filter out the unique IDs of teams that participated in the EPL. I proceeded to collect data based on the obtained list of IDs from the SQL statement. After that, I temporarily removed constraints between tables using the `NO CHECK CONSTRAINT` command to facilitate smooth data insertion.
 
