@@ -54,7 +54,7 @@ SELECT
     season,
     team,
     SUM(points) AS total_points,
-	ROW_NUMBER() OVER(PARTITION BY MatchPoints.season ORDER BY SUM(points) DESC) AS season_rank
+    ROW_NUMBER() OVER(PARTITION BY MatchPoints.season ORDER BY SUM(points) DESC) AS season_rank
 FROM MatchPoints
 GROUP BY
     season,
