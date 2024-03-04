@@ -106,7 +106,7 @@ WITH for_hattrick AS (
 		match_id
 		, scorer_player_id
 		, goal_id
-		,	LEFT(time, 2)
+		, LEFT(time, 2)
 )
 
 SELECT 
